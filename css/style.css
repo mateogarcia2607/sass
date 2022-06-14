@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'https://fonts.googleapis.com/css2?family=Koulen&display=swap', sans-serif;
+}
+
+body {
+  background-color: #a1a107;
+  font-size: small;
+  border: 20px, solid, black;
+  text-align: center;
+  -webkit-box-shadow: -1px;
+          box-shadow: -1px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: navbar linkCoder;
+}
+
+ul {
+  display: inline-block;
+}
+
+ul li {
+  margin-top: 50px auto;
+  margin-bottom: 50px auto;
+  grid-area: navbar;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Koulen', cursive;
+  color: black;
+  margin: 10px;
+  height: 100px;
+}
+
+main .titulo-principal {
+  color: #ff9d00;
+  font-weight: bolder;
+  font-family: 'Koulen', cursive;
+  background-color: #501687;
+}
+
+main h2 {
+  color: brown;
+}
+
+.fondo-del-gordo {
+  background-color: #dc2935;
+  width: 50%;
+  margin: 10%;
+}
+
+.img-encabezado {
+  display: inline;
+  width: 50%;
+  margin: 5%;
+  border: 5px dashed #cc3ed3;
+  background-color: #501687;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo-principal {
+  color: lime;
+  font-weight: bolder;
+  font-family: 'Koulen', cursive;
+  background-color: #501687;
+}
+
+.pie-de-pagina {
+  background-color: darkblue;
+  color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "redes-sociales" "descripcion-wakanda";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1rem;
+}
+
+.pie-de-pagina p {
+  font-size: xx-large;
+  font-weight: 400;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: redes-sociales;
+  color: honeydew;
+  width: 50%;
+  height: 50px;
+}
+
+.redes a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  color: black;
+  text-decoration: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: descripcion-wakanda;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b404cf;
+  font-family: koulen;
+  margin: 0%;
+}
+
+.imagen-historia {
+  width: 100px;
+}
+
+.link {
+  font-family: koulen;
+  font-size: x-large;
+      grid-template-areas: linkCoder;
+  padding-left: 100px;
+  text-align: end;
+}
+
+.contenedor-texto {
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1em;
+}
+
+.gracias {
+  background-color: #501687;
+  width: 70% auto;
+  color: #00e1ff;
+}
+
+form {
+  background-color: #501687;
+  padding: 100px;
+  font-family: koulen;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: formulario-p1 formulario-p2 formulario-p3;
+      grid-template-columns: formulario-p1 formulario-p2 formulario-p3;
+}
+
+.formulario-p1 {
+  margin-top: 10px;
+  padding: 100px;
+  grid-column: formulario-p1;
+  background-color: blanchedalmond;
+}
+
+.formulario-p2 {
+  text-align: right;
+  grid-column: formulario-p2;
+  background-color: #443985;
+  margin-left: auto;
+}
+
+.formulario-p2 {
+  text-align: left;
+  grid-column: formulario-p2;
+  background-color: #758539;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  nav ul li a {
+    background-color: #b404cf;
+  }
+  .contenedor-texto {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  nav ul li a {
+    background-color: #b404cf;
+  }
+  .contenedor-texto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    height: 80px;
+  }
+  .contenedor-texto {
+    background-color: blanchedalmond;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  .pie-de-pagina {
+    background-color: magenta;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
